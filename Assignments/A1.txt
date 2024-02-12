@@ -1,0 +1,21 @@
+Question: Explain the syntax to create a new MySQL database named "employees".
+
+Question: How do you list all the databases available in your MySQL server?
+
+Question: What is the purpose of the USE statement in MySQL? Provide an example.
+
+Question: Write a query to list all the tables under the database "employees".
+
+Question: Create three tables named "students", "courses", and "enrollments" with appropriate columns for each.
+
+Question: Write insert statements to add 10 records into each of the tables created in the previous question.
+
+Question: Explain the usage of data types such as VARCHAR, TEXT, DATE, DATETIME, INT, and FLOAT in MySQL with suitable examples.
+
+Question: Write a SELECT statement to retrieve all records from the "students" table.
+
+Question: What is the difference between VARCHAR and TEXT data types in MySQL?
+
+Question: How do you delete a table from a MySQL database? Provide the syntax and an example.
+
+Question: How do you drop a database in MySQL? Provide the syntax and an example.
