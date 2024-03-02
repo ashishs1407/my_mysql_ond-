@@ -1,0 +1,33 @@
+Q1. Write a query to fetch the EmpFname from the EmployeeInfo table inupper case and use the ALIAS name as EmpName.
+ 
+ANSWER = SELECT UPPER(EmpFname) from employeeinfotable;
+select EmpFname as EmpName from employeeinfotable;
+ 
+Q2.Write a query to fetch the number of employees working in thedepartment ‘HR’.
+ANSER = select * from employeeinfotable where Department = "HR";
+ 
+Q3.Write a query to get the current date.
+ANSWER =select curdate() as CurrentDate;
+ 
+Q4. Write a query to retrieve the first four characters of  EmpLname fromthe EmployeeInfo table.
+ANSWER =
+ 
+Q5. Write a query to fetch only the place name(string before brackets) fromthe Address column of EmployeeInfo table.
+ANSWER=
+ 
+ Q6. Write a query to create a new table which consists of data and structurecopied from the other table.
+ANSWER=
+ 
+Q7. Write a query to find all the employees whose salary is between 50000to 100000.
+ANSWER=
+Select * from employee_position_table where salary between 50000 And 100000;
+ 
+Q8. Write a query to find the names of employees that begin with ‘S’.
+ANSWER=
+ 
+Q9. Write a query to fetch top N records.
+ANSWER=
+ 
+ 
+Q10. Write a query to retrieve the EmpFname and EmpLname in a singlecolumn as “FullName”. The first name and the last name must be separatedwith space.
+ANSWER=
