@@ -98,3 +98,29 @@ select length(ename) ,ename  from my_prac.employee
 where length(ename) % 2 = 0  ;
 
 select reverse("Ashish") ;
+
+SELECT REPLACE("SQL Tutorial", "SQL", "HTML") ; 
+
+select replace(job , 'Man' , 'men')  , job from my_prac.employee ;
+ 
+ select * from my_prac.employee;
+ 
+SELECT trim(left( "Delhi (DEL)" , POSITION("(" IN "Delhi (DEL)") -1 ));
+
+-- Delhi (DEL)
+-- Agra (AGA)
+
+
+-- mid (string_value , start_index , n_values_to_fetch )
+SELECT MID("SQL Tutorial", 5, 3) AS MID_ExtractString ;
+SELECT SUBSTRING("SQL Tutorial", 5, 3) AS SUBSTRING_ExtractString;
+SELECT SUBSTR("SQL Tutorial", 5, 3) AS SUBSTR_ExtractString;
+
+
+SELECT SUBSTRING_INDEX("ajaymahkhan@gmail.com", "@" , 1 ) user_name ,
+SUBSTRING_INDEX("ajaymahkhan@gmail.com", "@" , -1 )  domain_name
+;
+select trim(substring_index("Delhi (DEL)" , '(' , 1)) ;
+
+-- for first character returns the ascii value
+Select ascii("Ajay") ;
