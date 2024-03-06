@@ -1,5 +1,6 @@
 Questions:
 
+DataSet from A3_data.sql file 
 
 Retrieve the total number of records in the dataset.
 Find the count of distinct genders present in the dataset.
@@ -15,4 +16,7 @@ Identify individuals whose first names start with the letter 'A'.
 Calculate the ratio of males to females in the dataset.
 Find the last 5 records sorted by country code in descending order.
 Identify individuals with a single-word last name.
-Calculate the average length of first names in the dataset.
+Calculate the average length of first names in the dataset. 
+
+
+
