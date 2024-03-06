@@ -1,6 +1,6 @@
 Questions:
 
-DataSet from A3_data.sql file 
+DataSet from Data_emp.sql file 
 
 Retrieve the total number of records in the dataset.
 Find the count of distinct genders present in the dataset.
