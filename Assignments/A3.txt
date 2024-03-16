@@ -1,0 +1,22 @@
+Questions:
+
+DataSet from Data_emp.sql file 
+
+Retrieve the total number of records in the dataset.
+Find the count of distinct genders present in the dataset.
+Calculate the average length of email addresses in the dataset.
+List the top 5 countries with the highest number of individuals.
+Find the percentage of males in the dataset.
+Identify the country with the highest number of females.
+Determine the number of individuals with gender labeled as "Genderqueer".
+List the first 10 records sorted by last name in ascending order.
+Calculate the number of individuals from each country.
+Find the email addresses with a ".com" domain.
+Identify individuals whose first names start with the letter 'A'.
+Calculate the ratio of males to females in the dataset.
+Find the last 5 records sorted by country code in descending order.
+Identify individuals with a single-word last name.
+Calculate the average length of first names in the dataset. 
+
+
+
