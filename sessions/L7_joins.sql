@@ -211,3 +211,128 @@ select * from sales ;
   select * from sales as s
   left join members as m
   on m.customer_id = s.customer_id ;
+
+    select * from sales as s
+  left join members as m
+  on m.customer_id = s.customer_id ;
+  
+  /*
+cid	order_date	p_id	cid	joining_date
+A	01-01-2021	1	A	07-01-2021
+A	01-01-2021	2	A	07-01-2021
+A	07-01-2021	2	A	07-01-2021
+A	10-01-2021	3	A	07-01-2021
+A	11-01-2021	3	A	07-01-2021
+A	11-01-2021	3	A	07-01-2021
+B	01-01-2021	2	B	09-01-2021
+B	02-01-2021	2	B	09-01-2021
+B	04-01-2021	1	B	09-01-2021
+B	11-01-2021	1	B	09-01-2021
+B	16-01-2021	3	B	09-01-2021
+B	01-02-2021	3	B	09-01-2021
+C	01-01-2021	3	null	null
+C	01-01-2021	3	null	null
+C	07-01-2021	3	null	null
+
+
+
+  */
+  
+  select * from sales ;
+  select * from members ;
+  
+  use my_sql_1 ;
+  
+select * 
+from sales s  
+right join members  m 
+  on m.customer_id = s.customer_id ;
+  
+  
+  -- left anti join 
+    select * from sales as s
+  left join members as m
+  on m.customer_id = s.customer_id 
+  where m.customer_id is null ;
+  
+  
+  -- full join 
+  
+  
+  -- self  join : a table joined to itself is self join 
+  
+  select * from sales  a
+  join sales b
+  on a.customer_id = b.customer_id ;
+  
+-- employee salary >  manager  salary  
+  
+  use my_sql_1 ;
+    
+  select * from sales ;  -- a b c  A 
+  select * from members ; -- a b d  B
+  (
+  select * from  sales  s  
+  left join members m 
+  on m.customer_id = s.customer_id 
+  where m.customer_id is null 
+  )
+  union 
+(
+ select * from  sales  s  
+  right join members m 
+  on m.customer_id = s.customer_id
+  where s.customer_id is null ) ;
+  
+  
+  
+  create table employee1(
+    c_id int ,
+    salary int ,
+    m_id int
+    );
+insert into employee1 values (1 , 100 , null ) ;
+insert into employee1 values (2 , 200 , 1 ) ;
+insert into employee1 values (3 , 50 , 1 ) ;
+select * from employee1;
+
+
+select  e2.c_id from employee1 e1   
+join employee1 e2 
+on e1.c_id = e2.m_id 
+where e2.salary > e1.salary  ;
+
+
+-- customer who palced oreder the same they join membership 
+
+select * from members ;
+select * from sales;
+
+
+select s.* , m.* 
+from members m
+join sales  s
+on m.customer_id = s.customer_id 
+and s.order_date >= '2021-01-04' 
+
+-- joining 3 tables 
+select * from members ;
+select * from sales ;
+select * from menu ;
+
+
+select * from sales s
+left join members  m 
+-- using (customer_id)
+on m.customer_id = s.customer_id 
+left join menu mu
+on s.product_id = mu.product_id ;
+
+
+-- natural join 
+
+select * from sales , members 
+where sales.customer_id = members.customer_id;
+
+select * from sales 
+cross join menu ;  
